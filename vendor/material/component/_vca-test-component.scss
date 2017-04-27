@@ -1,0 +1,8 @@
+// Import theme and or themes to instantiate $theme variable i.e. $theme || $vca-app-theme || etc
+@import '../themes/vca-theme';
+// Import mixin of component
+@import 'mixin/vca-test-mixin';
+
+// Using the $theme variable from the pre-built theme you can call the theming function /// Include the component and corresponing theme integration... 
+@include vca-test-component($vca-app-theme);
+

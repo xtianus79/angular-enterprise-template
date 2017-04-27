@@ -1,0 +1,94 @@
+@import '../../../node_modules/@angular/material/_theming';
+
+$vistana-color-key: 'base' !default;
+
+$vistana-colors: (
+  'primary': (
+    'base': #00a5ce,
+    'light': #ef9a9a,
+    'dark': #b71c1c
+  ),
+  'accent': (
+    'base': #d98328,
+    'light': #dd8f3d,
+    'dark': #c57623
+  ),
+  'secondary': (
+    'base': #233f58,
+    'light': #7b1a2d,
+    'dark': #51111e
+  ),
+  'foreground': (
+    'base': #191919,
+    'light': #333333,
+    'dark': #111111,
+    'darker': #000000
+  ),
+  'background': (
+    'base': #e9e9e9,
+    'light': #ffffff,
+    'dark': #dddddd
+  )
+);
+
+$color-opacity: (
+  'light': 0.8, // for light colors
+  'dark': 0.4,  // for dark colors
+);
+
+$md-vistana: (
+  50: #ffebee,
+  100: #ffcdd2,
+  200: #ef9a9a,
+  300: #e57373,
+  400: #ef5350,
+  500: #00a5ce,
+  600: #e53935,
+  700: #d32f2f,
+  800: #c62828,
+  900: #b71c1c,
+  A100: #ff8a80,
+  A200: #ff5252,
+  A400: #ff1744,
+  A700: #00708c,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+// functions used to call upon color palette
+@function vistana-color(
+  $key: 'primary',
+  $variant: $vistana-color-key,
+  $opacity: 1
+  ) {
+    $color: null;
+    $color-spectrum: map-get($vistana-colors, $key);
+    @if $color-spectrum {
+      $color: map-get($color-spectrum, $variant);
+    }
+
+    $alpha: if(type-of($opacity) == 'number', $opacity, map-get($color-opacity, $opacity));
+
+    @if $alpha {
+      $color: rgba($color, $alpha);
+    }
+
+    @return $color;
+}
+
+$primary-color: vistana-color('primary', 'dark', $opacity: 'dark');
+

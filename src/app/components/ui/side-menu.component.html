@@ -1,0 +1,77 @@
+<!--<header class="root---u5wpL"></header>-->
+
+     <!--<div>
+      <p>Expression status: {{show}}</p>
+      <button (click)="clicked()">Toggle Header</button>
+      <div style="border: 1px solid black; padding: 10px; width: 600px; margin-top: 10px; margin-left: 100px;">
+        <div *ngIf="show">
+          <h2>Hello Angular2!</h2>
+        </div>
+      </div>
+    </div>-->
+
+<div [class.rootExpanded___ji085]="this.willExpand" (click)="mouseEnter()" class="root---2CZyk christian1 hide-print">
+    <div [class.rootExpanded___6du12]="this.willExpand" class="root---2eugK"></div>
+        <div [class.rootExpanded___2QHd4]="this.willExpand">
+            <a class="linkActive---3LWST link---DxcJ0" (click)="clicked()">
+                <span class="icon---1he1r"><svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><title>Home icon</title><g class="iconFill---2zsU4" transform="translate(0,2)"><path d="M11.500505,0 L0,8.13648507 L0.569621921,9 L11.500505,1.26495528 L22.4293681,9 L23,8.13648507 L11.500505,0 Z M20,10 L21,10 L21,20 L20,20 L20,10 Z M2,10 L3,10 L3,20 L2,20 L2,10 Z M8,20 L9,20 L9,13 L14,13 L14,20 L15,20 L15,12 L8,12 L8,20 Z M3,1 L5,1 L5,2 L6,2 L6,0 L2,0 L2,4 L3,4 L3,1 Z"></path></g></svg></span>
+                <span class="label---Ce9-Y">Admin</span>
+            </a>
+            <a class="linkActive---3LWST link---DxcJ0" routerLink="/admin/allocation/search" (mouseenter)="lowerLink()">
+                <span class="icon---1he1r"><svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><title>Home icon</title><g class="iconFill---2zsU4" transform="translate(0,2)"><path d="M11.500505,0 L0,8.13648507 L0.569621921,9 L11.500505,1.26495528 L22.4293681,9 L23,8.13648507 L11.500505,0 Z M20,10 L21,10 L21,20 L20,20 L20,10 Z M2,10 L3,10 L3,20 L2,20 L2,10 Z M8,20 L9,20 L9,13 L14,13 L14,20 L15,20 L15,12 L8,12 L8,20 Z M3,1 L5,1 L5,2 L6,2 L6,0 L2,0 L2,4 L3,4 L3,1 Z"></path></g></svg></span>
+                <span class="label---Ce9-Y">Allocation</span>
+            </a>
+            <a class="linkActive---3LWST link---DxcJ0" routerLink="/dashboard">
+                <span class="icon---1he1r"><svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><title>Home icon</title><g class="iconFill---2zsU4" transform="translate(0,2)"><path d="M11.500505,0 L0,8.13648507 L0.569621921,9 L11.500505,1.26495528 L22.4293681,9 L23,8.13648507 L11.500505,0 Z M20,10 L21,10 L21,20 L20,20 L20,10 Z M2,10 L3,10 L3,20 L2,20 L2,10 Z M8,20 L9,20 L9,13 L14,13 L14,20 L15,20 L15,12 L8,12 L8,20 Z M3,1 L5,1 L5,2 L6,2 L6,0 L2,0 L2,4 L3,4 L3,1 Z"></path></g></svg></span>
+                <span class="label---Ce9-Y">Dashboard</span>
+            </a>
+             <a class="linkActive---3LWST link---DxcJ0" routerLink="/tour/general">
+                <span class="icon---1he1r"><svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><title>Home icon</title><g class="iconFill---2zsU4" transform="translate(0,2)"><path d="M11.500505,0 L0,8.13648507 L0.569621921,9 L11.500505,1.26495528 L22.4293681,9 L23,8.13648507 L11.500505,0 Z M20,10 L21,10 L21,20 L20,20 L20,10 Z M2,10 L3,10 L3,20 L2,20 L2,10 Z M8,20 L9,20 L9,13 L14,13 L14,20 L15,20 L15,12 L8,12 L8,20 Z M3,1 L5,1 L5,2 L6,2 L6,0 L2,0 L2,4 L3,4 L3,1 Z"></path></g></svg></span>
+                <span class="label---Ce9-Y">Tour Booking</span>
+            </a>
+			<a class="linkActive---3LWST link---DxcJ0" routerLink="/tour-search">
+                <span class="icon---1he1r"><svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><title>Home icon</title><g class="iconFill---2zsU4" transform="translate(0,2)"><path d="M11.500505,0 L0,8.13648507 L0.569621921,9 L11.500505,1.26495528 L22.4293681,9 L23,8.13648507 L11.500505,0 Z M20,10 L21,10 L21,20 L20,20 L20,10 Z M2,10 L3,10 L3,20 L2,20 L2,10 Z M8,20 L9,20 L9,13 L14,13 L14,20 L15,20 L15,12 L8,12 L8,20 Z M3,1 L5,1 L5,2 L6,2 L6,0 L2,0 L2,4 L3,4 L3,1 Z"></path></g></svg></span>
+                <span class="label---Ce9-Y">Tour Search</span>
+            </a>
+        </div>
+    </div>
+<div class="paul" *ngIf="show">
+        <a class="linkActive---3LWST link---DxcJ0" routerLink="/admin/guesttype">
+            <!--<a class="linkActive---3LWST link---DxcJ0">-->
+            <span class="icon---1he1r"><svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><title>Home icon</title><g class="iconFill---2zsU4" transform="translate(0,2)"><path d="M11.500505,0 L0,8.13648507 L0.569621921,9 L11.500505,1.26495528 L22.4293681,9 L23,8.13648507 L11.500505,0 Z M20,10 L21,10 L21,20 L20,20 L20,10 Z M2,10 L3,10 L3,20 L2,20 L2,10 Z M8,20 L9,20 L9,13 L14,13 L14,20 L15,20 L15,12 L8,12 L8,20 Z M3,1 L5,1 L5,2 L6,2 L6,0 L2,0 L2,4 L3,4 L3,1 Z"></path></g></svg></span>
+            <span class="label---Ce9-T">Guest Mapping</span>
+        </a>
+        <a class="linkActive---3LWST link---DxcJ0" routerLink="/admin/persons">
+            <span class="icon---1he1r"><svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><title>Home icon</title><g class="iconFill---2zsU4" transform="translate(0,2)"><path d="M11.500505,0 L0,8.13648507 L0.569621921,9 L11.500505,1.26495528 L22.4293681,9 L23,8.13648507 L11.500505,0 Z M20,10 L21,10 L21,20 L20,20 L20,10 Z M2,10 L3,10 L3,20 L2,20 L2,10 Z M8,20 L9,20 L9,13 L14,13 L14,20 L15,20 L15,12 L8,12 L8,20 Z M3,1 L5,1 L5,2 L6,2 L6,0 L2,0 L2,4 L3,4 L3,1 Z"></path></g></svg></span>
+            <span class="label---Ce9-T">VSC List</span>
+        </a>
+        <a class="linkActive---3LWST link---DxcJ0" routerLink="/admin/activator/setup">
+            <span class="icon---1he1r"><svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><title>Home icon</title><g class="iconFill---2zsU4" transform="translate(0,2)"><path d="M11.500505,0 L0,8.13648507 L0.569621921,9 L11.500505,1.26495528 L22.4293681,9 L23,8.13648507 L11.500505,0 Z M20,10 L21,10 L21,20 L20,20 L20,10 Z M2,10 L3,10 L3,20 L2,20 L2,10 Z M8,20 L9,20 L9,13 L14,13 L14,20 L15,20 L15,12 L8,12 L8,20 Z M3,1 L5,1 L5,2 L6,2 L6,0 L2,0 L2,4 L3,4 L3,1 Z"></path></g></svg></span>
+            <span class="label---Ce9-T">Activator SetUp</span>
+        </a>
+        <a class="linkActive---3LWST link---DxcJ0" routerLink="/admin/gifts">
+            <span class="icon---1he1r"><svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><title>Home icon</title><g class="iconFill---2zsU4" transform="translate(0,2)"><path d="M11.500505,0 L0,8.13648507 L0.569621921,9 L11.500505,1.26495528 L22.4293681,9 L23,8.13648507 L11.500505,0 Z M20,10 L21,10 L21,20 L20,20 L20,10 Z M2,10 L3,10 L3,20 L2,20 L2,10 Z M8,20 L9,20 L9,13 L14,13 L14,20 L15,20 L15,12 L8,12 L8,20 Z M3,1 L5,1 L5,2 L6,2 L6,0 L2,0 L2,4 L3,4 L3,1 Z"></path></g></svg></span>
+            <span class="label---Ce9-T">Gifts</span>
+        </a>
+        <a class="linkActive---3LWST link---DxcJ0" routerLink="/admin/leadstatus">
+            <span class="icon---1he1r"><svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><title>Home icon</title><g class="iconFill---2zsU4" transform="translate(0,2)"><path d="M11.500505,0 L0,8.13648507 L0.569621921,9 L11.500505,1.26495528 L22.4293681,9 L23,8.13648507 L11.500505,0 Z M20,10 L21,10 L21,20 L20,20 L20,10 Z M2,10 L3,10 L3,20 L2,20 L2,10 Z M8,20 L9,20 L9,13 L14,13 L14,20 L15,20 L15,12 L8,12 L8,20 Z M3,1 L5,1 L5,2 L6,2 L6,0 L2,0 L2,4 L3,4 L3,1 Z"></path></g></svg></span>
+            <span class="label---Ce9-T">Lead Status</span>
+        </a>
+        <a class="linkActive---3LWST link---DxcJ0" routerLink="/admin/location">
+            <span class="icon---1he1r"><svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><title>Home icon</title><g class="iconFill---2zsU4" transform="translate(0,2)"><path d="M11.500505,0 L0,8.13648507 L0.569621921,9 L11.500505,1.26495528 L22.4293681,9 L23,8.13648507 L11.500505,0 Z M20,10 L21,10 L21,20 L20,20 L20,10 Z M2,10 L3,10 L3,20 L2,20 L2,10 Z M8,20 L9,20 L9,13 L14,13 L14,20 L15,20 L15,12 L8,12 L8,20 Z M3,1 L5,1 L5,2 L6,2 L6,0 L2,0 L2,4 L3,4 L3,1 Z"></path></g></svg></span>
+            <span class="label---Ce9-T">Locations</span>
+        </a>
+        <a class="linkActive---3LWST link---DxcJ0" routerLink="/admin/leadsource">
+            <span class="icon---1he1r"><svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><title>Home icon</title><g class="iconFill---2zsU4" transform="translate(0,2)"><path d="M11.500505,0 L0,8.13648507 L0.569621921,9 L11.500505,1.26495528 L22.4293681,9 L23,8.13648507 L11.500505,0 Z M20,10 L21,10 L21,20 L20,20 L20,10 Z M2,10 L3,10 L3,20 L2,20 L2,10 Z M8,20 L9,20 L9,13 L14,13 L14,20 L15,20 L15,12 L8,12 L8,20 Z M3,1 L5,1 L5,2 L6,2 L6,0 L2,0 L2,4 L3,4 L3,1 Z"></path></g></svg></span>
+            <span class="label---Ce9-T">Lead Source</span>
+        </a>
+        <a class="linkActive---3LWST link---DxcJ0" routerLink="/admin/vsc/scheduling">
+            <span class="icon---1he1r"><svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><title>Home icon</title><g class="iconFill---2zsU4" transform="translate(0,2)"><path d="M11.500505,0 L0,8.13648507 L0.569621921,9 L11.500505,1.26495528 L22.4293681,9 L23,8.13648507 L11.500505,0 Z M20,10 L21,10 L21,20 L20,20 L20,10 Z M2,10 L3,10 L3,20 L2,20 L2,10 Z M8,20 L9,20 L9,13 L14,13 L14,20 L15,20 L15,12 L8,12 L8,20 Z M3,1 L5,1 L5,2 L6,2 L6,0 L2,0 L2,4 L3,4 L3,1 Z"></path></g></svg></span>
+            <span class="label---Ce9-T">VSC Scheduling</span>
+        </a>  
+    </div>
+
+<!--[class.rootExpanded---ji085]="willExpand"-->
+
+<!--this is for a single class
+[class.rootExpanded___ji085]="this.willExpand"-->

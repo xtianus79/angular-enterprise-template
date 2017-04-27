@@ -1,0 +1,21 @@
+// Import all the tools needed to customize the theme and extract parts of it
+@import '../../../node_modules/@angular/material/core/theming/all-theme';
+// Import themes for custom components and pass in the theme variable i.e. $theme
+@import '../themes/vca-theme';
+
+// Define a mixin that accepts a theme and outputs the color styles for the component.
+@mixin vca-test-component($vca-app-theme) {
+  // Extract whichever individual palettes you need from the theme.
+  $primary: map-get($vca-app-theme, primary);
+  $accent: map-get($vca-app-theme, accent);
+
+  // Use md-color to extract individual colors from a palette as necessary.
+  .vca-test {
+    background-color: md-color($primary, 500);
+    border: 2px solid md-color($accent, A400);
+    color: white;
+    font-size: 21px;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+}

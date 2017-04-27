@@ -1,0 +1,207 @@
+@import '../../../../__scss/global';
+
+h1 {
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
+}
+
+.root---2CZyk {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    // border-right: 1px solid #192733;
+    z-index: 960;
+    background-color: $primary-vistana;
+    color: #fff;
+    overflow: hidden;
+    transition: width .12s ease-in-out,box-shadow .12s ease-in-out;
+}
+
+.root---2eugK {
+    background-color: #5d676f;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60px;
+    height: 45px;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 18px;
+    // border-right: 1px solid #181818;
+    // border-bottom: 1px solid #181818;
+}
+
+.rootExpanded___ji085 {
+    width: 220px;
+    border-right: 2px solid grey;
+    box-shadow: 1px 1px 2px rgba(101,101,101,.4);
+}
+
+// .christian1 {
+//     width: 220px;
+//     // box-shadow: 2px 0 4px rgba(0,0,0,.3)
+// }
+
+.rootExpanded___6du12 {
+    width: 220px
+}
+
+.christian35 {
+    display: none;
+}
+
+.root---375fR {
+
+}
+
+.link---DxcJ0 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 44px;
+    width: 220px;
+    padding: 0 18px;
+    cursor: pointer;
+    color: #aaa;
+    outline: none;
+    transition: all .15s ease-in-out;
+    text-decoration: none;
+}
+
+.linkActive---3LWST {
+    color: #f05a28;
+}
+
+.label---Ce9-Y {
+    font-family: Gotham SSm A,Gotham SSm B,sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0;
+    transform: translate(-10px);
+    transition: color .15s ease-in-out,opacity .15s ease-in-out,transform .15s ease-in-out;
+}
+
+.rootExpanded___2QHd4 .label---Ce9-Y {
+    opacity: 1;
+    transform: translateX(0)
+}
+
+.rootExpanded---6dul2 {
+    width: 220px
+}
+
+.link---DxcJ0 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 44px;
+    width: 220px;
+    padding: 0 18px;
+    cursor: pointer;
+    color: #aaa;
+    outline: none;
+    transition: all .15s ease-in-out;
+    text-decoration: none;
+}
+
+.icon---1he1r {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 18px;
+}
+
+.link---DxcJ0:focus,.link---DxcJ0:hover {
+    background: #0a87a7;
+    text-decoration: none
+}
+
+.link---DxcJ0:focus .iconFill---2zsU4,.link---DxcJ0:hover .iconFill---2zsU4 {
+    fill: #fff
+}
+
+.linkActive---3LWST .iconFill---2zsU4 {
+    fill: #fff;
+}
+
+.link---DxcJ0:focus .label---Ce9-Y,.link---DxcJ0:hover .label---Ce9-Y {
+    color: #fff
+}
+
+
+.root---u5wpL {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 62px;
+    padding-left: 120px;
+    background-color: $primary-vistana;
+    transition: padding .15s ease-in-out;
+    transition: width .15s ease-in-out;
+    z-index: 123;
+    border-bottom: 1px solid #181818;
+    width: 100%;
+}
+
+.paul {
+    position: fixed;
+    opacity: 1;
+    top: 45px;
+    left: 220px;
+    background-color: $primary-vistana;
+    height: 400px;
+    z-index: 77;
+    box-shadow: 1px 1px 2px rgba(101,101,101,.4);
+    transition-delay: 2s;
+    transition: width .12s ease-in-out,box-shadow .12s ease-in-out, opacity 1s ease-in-out;
+}
+
+// .paul-transition {
+//     opacity: 1 !important;
+//     // transition: width .12s ease-in-out,box-shadow .12s ease-in-out, opacity 2s ease-in-out;
+    
+// }
+
+.label---Ce9-T {
+    font-family: Gotham SSm A,Gotham SSm B,sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 1;
+    transform: translate(-10px);
+    transition: color .15s ease-in-out,opacity .15s ease-in-out,transform .15s ease-in-out;
+}

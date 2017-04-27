@@ -1,0 +1,35 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@selectableBackground_vca   :           rgba(228, 216, 17, 0.3);
+@tableRowOdd                :           #e2e2e2;
+@tableRowEven               :           #fff;
+
+@relativeMiniVertical       :           .63rem;
+@relativeMiniHorizontal     :           .66rem;
+
+@headerBackgroundColor      :           #00a5ce;
+@headerFontColor            :           #fff;
+@headerFontSize             :           .875rem;
+@headerHorizontalPadding_vca:           .66rem;
+@headerVerticalPadding_vca  :           .66rem;
+
+@footerBackgroundColor      :           #FFFFE0;
+
+@absoluteBorderRadius       :           .2rem;
+
+@selectHeight_vca           :           22px;
+
+@positiveBackgroundColor    :           #faffe3;
+
+@mediumMonitorWidth_vca     :           830px;
+
+@largeMonitorWidth_vca      :           960px;
+
+@largeMedMonitorWidth_vca   :           1000px;
+
+@largestMonitorWidth_vca    :           1200px;
+
+// @headerFontWeight           :           600;
+
