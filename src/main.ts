@@ -5,9 +5,9 @@ import './styles.scss';
 import './styles.css';
 
 if (process.env.ENV === 'production') {
-  enableProdMode();
+  // enableProdMode();
 }
-enableProdMode();
+// enableProdMode();
 
-platformBrowserDynamic().bootstrapModule(AppModule);
+platformBrowserDynamic().bootstrapModule(AppModule).catch(err => console.error(err));
 

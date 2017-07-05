@@ -3,6 +3,7 @@ const { CheckerPlugin } = require('awesome-typescript-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const helpers = require('./helpers');
+const { AotPlugin } = require('@ngtools/webpack');
 
 // const test = require('!style!css!sass!./test.scss');
 
@@ -29,10 +30,11 @@ module.exports = {
 
     module: {
         loaders: [
-            {
-                test: /\.ts$/,
-                use: ['awesome-typescript-loader', 'angular2-template-loader']
-            },
+            // {
+            //     test: /\.ts$/,
+            //     use: ['awesome-typescript-loader', 'angular2-template-loader']
+            // },
+            
             {
                 test: /\.json$/,
                 use: 'json-loader'
@@ -71,6 +73,10 @@ module.exports = {
                 test: /\.css$/,
                 include: helpers.root('src/app'),
                 use: 'raw-loader'
+            },
+            {
+                test: /\.ts$/,
+                use: '@ngtools/webpack',
             }
         ]
     },
@@ -96,7 +102,13 @@ module.exports = {
             "NODE_ENV",
             "URL",
             "BASEURL"
-        ])
+        ]), 
+
+        new AotPlugin({
+            mainPath: 'src/main.ts',
+            entryModule: helpers.root('src/app/app.module#AppModule'),
+            tsConfigPath: 'tsconfig.json'
+        })
 
     ]
 };

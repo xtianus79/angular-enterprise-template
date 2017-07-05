@@ -7,15 +7,15 @@ import {Component, Renderer} from '@angular/core';
 })
 export class SideMenuComponent {
 
-    private show: boolean = false;
+    show = false;
 
     private entered: boolean;
-    private leave: boolean = true;
-    private adjacentLink: boolean = true;
+    private leave = true;
+    private adjacentLink = true;
 
     private isActive: boolean;
-    private willExpand: boolean = false;
-    private willExpandSubmenu: boolean = false;
+    willExpand = false;
+    private willExpandSubmenu = false;
     private config: any;
 
     private hasSubmenu: boolean;
